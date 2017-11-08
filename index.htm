@@ -11,14 +11,18 @@
     
     </style>
     <script>
-            function purchase(){
-                var quantity = document.getElementById("");
-                var quantity = document.getElementById("");
-                var quantity = document.getElementById("");
+            function purchase_football_NYCGH(){
+                var quantity1 = document.getElementById("quantity1");
                 var output = document.getElementById("output");
-
-
-     
+                var retail1 = 79.99;
+                var wholsale_price1 = 69.99;
+                var profit1 = (retail1 * parseInt(quantity1.value) - (parseFloat(wholsale_price1.value) * parseInt(quantity1.value)))
+                var subtotal = (parseFloat(retail1.value) * parseInt(quantity1.value)) 
+                var build = "";
+                build += "You Bought" + quantity1.value 
+                build += "The total retail for the New York Giants Home Jerseys" + subtotal; 
+                console.log("Retail per item = " (retail1.value))
+                console.log = 
             } 
 
 
@@ -26,9 +30,6 @@
     </head>
     <body> 
 
-        <button onclick = "purchase();">
-                Checkout
-        </button>
         <div id = "output"> </div>
 
         <div>
@@ -88,7 +89,7 @@
             Quantity: <input type = "text" id = "quantity1">
         </div><br><br>
         
-        <button onclick = "purchase();">
+        <button onclick = "purchase_football_NYCGH();">
                 Checkout
         </button>
         <div id = "output"> </div>
