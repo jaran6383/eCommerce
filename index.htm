@@ -1,7 +1,33 @@
 <html>
     <head>
-        <title>New York Team Jerseys</title>
-    <style>
+        <title>New York Football Team Jerseys</title>
+    <style type = "text/css">;
+        h1 {
+        background-color: green;
+    }
+    
+        div {
+        background-color: #FFFFFF;
+    }
+    
+        p {
+        background-color: #FFFFFF;
+    }
+    
+    
+
+    div {
+        color: #AD0202;
+    }
+
+    div.thick {
+        font-weight: bold;
+    }
+    
+    p {
+     font-family: "Times New Roman", Times, serif;
+    }
+    
         img{
             width:200px;
         }
@@ -13,18 +39,77 @@
     <script>
             function purchase_football_NYCGH(){
                 var quantity1 = document.getElementById("quantity1");
-                var output = document.getElementById("output");
+                var output1 = document.getElementById("output");
                 var retail1 = 79.99;
                 var wholsale_price1 = 69.99;
-                var profit1 = (retail1 * parseInt(quantity1.value) - (parseFloat(wholsale_price1.value) * parseInt(quantity1.value)))
-                var subtotal = (parseFloat(retail1.value) * parseInt(quantity1.value)) 
-                var build = "";
-                build += "You Bought" + quantity1.value 
-                build += "The total retail for the New York Giants Home Jerseys" + subtotal; 
-                console.log("Retail per item = " (retail1.value))
-                console.log = 
-            } 
+                var profit1 = (retail1 * parseInt(quantity1.value) - (parseFloat(wholsale_price1.value) * parseInt(quantity1.value)));
+                var subtotal1 = (parseFloat(retail1.value) * parseInt(quantity1.value)) ;
+                var build1 = "";
+                build1 += "You Bought" + quantity1.value ;
+                build1 += "The total retail for the New York Giants Home Jerseys" + parseFloat(subtotal1.value); 
+                console.log("Retail per item = " +  retail1);
+                console.log("Amount bought = " + parseInt(quantity1.value ));
+                console.log("Subtotal = " + parseFloat(subtotal1.value));
+                console.log("___________________________");
+                console.log("Profit made = " + parseFloat(profit1.value));
+                ouput1.innerhtml = build1;
+            }
 
+            function purchase_football_NYCGA(){
+                var quantity2 = document.getElementById("quantity2");
+                var output2 = document.getElementById("output2");
+                var retail2 = 79.99;
+                var wholsale_price2 = 69.99;
+                var profit2 = (retail2 * parseInt(quantity2.value) - (parseFloat(wholsale_price2.value) * parseInt(quantity2.value)));
+                var subtotal2 = (parseFloat(retail2.value) * parseInt(quantity2.value)) ;
+                var build = "";
+                build += "You Bought" + quantity2.value ;
+                build += "The total retail for the New York Giants Away Jerseys" + parseFloat(subtotal2.value); 
+                console.log("Retail per item = " +  retail2);
+                console.log("Amount bought = " + parseInt(quantity2.value ));
+                console.log("Subtotal = " + parseInt(subtotal2.value));
+                console.log("___________________________");
+                console.log("Profit made = " + parseFloat(profit2.value));
+                ouput2.innerhtml = build2;
+
+            }
+
+            function purchase_football_NYCJH(){
+                var quantity3 = document.getElementById("quantity3");
+                var output3 = document.getElementById("output3");
+                var retail3 = 79.99;
+                var wholsale_price3 = 69.99;
+                var profit3 = (retail3 * parseInt(quantity3.value) - (parseFloat(wholsale_price3.value) * parseInt(quantity3.value)));
+                var subtotal3 = (parseFloat(retail3.value) * parseInt(quantity3.value)) ;
+                var build3 = "";
+                build3 += "You Bought" + quantity2.value ;
+                build3 += "The total retail for the New York Giants Away Jerseys" + parseFloat(subtotal3.value); 
+                console.log("Retail per item = " +  retail3);
+                console.log("Amount bought = " + parseInt(quantity3.value ));
+                console.log("Subtotal = " + parseInt(subtotal3.value));
+                console.log("___________________________");
+                console.log("Profit made = " + parseFloat(profit3.value));
+                ouput3.innerhtml = build3;
+
+            }
+                
+            function purchase_football_NYCJA(){
+                var quantity4 = document.getElementById("quantity4");
+                var output4 = document.getElementById("output4");
+                var retail4 = 79.99;
+                var wholsale_price4 = 69.99;
+                var profit4 = (retail4 * parseInt(quantity4.value) - (parseFloat(wholsale_price4.value) * parseInt(quantity4.value)));
+                var subtotal4 = (parseFloat(retail4.value) * parseInt(quantity4.value)) ;
+                var build4 = "";
+                build4 += "You Bought" + quantity4.value ;
+                build4 += "The total retail for the New York Giants Away Jerseys" + parseFloat(subtotal4.value); 
+                console.log("Retail per item = " +  retail4);
+                console.log("Amount bought = " + parseInt(quantity4.value ));
+                console.log("Subtotal = " + parseInt(subtotal4.value));
+                console.log("___________________________");
+                console.log("Profit made = " + parseFloat(profit4.value));
+                ouput4.innerhtml = build4;   
+            }
 
     </script>
     </head>
@@ -45,8 +130,14 @@
                 *Team sign-off on back neck<br>                
             </p>
             Quantity: <input type = "text" id = "quantity1">
+        </div>
       
-
+        <div id = "output1"></div>
+            <button onclick = "purchase_football_NYCGH();">
+                Buy
+            </button>
+        
+        <div>
             <br>
             <h1>New York Giants Away Jerseys</h1>
             <img src = "images\GiantsAway.jpg"><br>
@@ -59,8 +150,13 @@
                 *Team sign-off on back neck<br>
             </p>
             Quantity: <input type = "text" id = "quantity1">
-     
 
+            <div id = "output2"></div>
+                <button onclick = "purchase_football_NYCGA();">
+                     Buy
+                </button>
+        </div>
+        <div>
             <br>
             <h1>New York Jets Home Jerseys</h1>
             <img src = "images\JetsHome.jpg"><br>
@@ -73,8 +169,13 @@
                 *Team sign-off on back neck<br>
             </p>
             Quantity: <input type = "text" id = "quantity1">
-       
             
+            <div id = "output3"></div>
+                <button onclick = "purchase_football_NYCJH();">
+                    Buy
+                </button>
+        </div>
+        <div>    
             <br>
             <h1>New York Jets Away Jerseys</h1>
             <img src = "images\JetsAway.jpg"><br>
@@ -89,11 +190,10 @@
             Quantity: <input type = "text" id = "quantity1">
         </div><br><br>
         
-        <button onclick = "purchase_football_NYCGH();">
-                Checkout
-        </button>
-        <div id = "output"> </div>
-
-
+        <div id = "output1"></div>
+            <button onclick = "purchase_football_NYCJA();">
+                 Buy
+            </button>
+        </div>
     </body>
 </html>
